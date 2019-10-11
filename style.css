@@ -26,6 +26,9 @@ body {
 }
 #woord {
     padding-top: 10px;
+    height: 40px;
+    width: 150px;
+    text-align: center;
 }
 
 #definitieveld {
@@ -35,6 +38,8 @@ body {
 #definitie {
     height: 100px;
     width: 200px;
+    text-align: center;
+    
 }
 
 #woorddefsave {
