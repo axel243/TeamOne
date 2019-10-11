@@ -13,9 +13,10 @@ function woordOpslaan(){
   var definitie = document.getElementById("definitie").value;
   var woordDefinitie = new WoordMetDefinitie(woord, definitie);
   var woordJSON = JSON.stringify(woordDefinitie);
-  array.push(woordJSON);
-  console.log(array);
-  localStorage.setItem("Key",array);
+  array.push(woordDefinitie);
+  var arrayJSON = JSON.stringify(array);
+  localStorage.setItem("Key",arrayJSON);
+  console.log(arrayJSON);
   document.getElementById('woord').value = '';
   document.getElementById('definitie').value = '';
 }
