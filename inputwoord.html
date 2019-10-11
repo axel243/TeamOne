@@ -18,14 +18,16 @@ window.onload = spelernaam;
 
 <div id="container">
     
-    <div id="welkomsttekst">ab</div>
+    
     <div id="instructies"><h1>Het Woordenboekspel</h1><br />
-        <p>Hallo: Vul het woord en de definitie in.<p></div>
+        <div id="welkomsttekst"></div>
+        <p>Vul het woord en de definitie in (max. 240 characters).<p></div>
     <div id="spel">
 
 
-    <div id="woordveld">Woord: <br /><input id="woord"type="text" /></div>
-        <div id="definitieveld">Definitie: <br /><input id="definitie"type="text" /></div>
+    <div id="woordveld">Woord: <br /><textarea id="woord"type="text" maxlength="50"></textarea></div>
+        <!-- <div id="definitieveld">Definitie: <br><input id="definitie"type="text"></div> -->
+        <div id="definitieveld">Definitie: <br><textarea id="definitie" type="text" maxlength="240"></textarea></div>
     <button id="woorddefsave" onclick="woordOpslaan()">Opslaan</button>
 
     </div>
