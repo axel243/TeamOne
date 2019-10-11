@@ -16,6 +16,8 @@ function woordOpslaan(){
   array.push(woordDefinitie);
   console.log(array);
   localStorage.setItem("Key",array);
+  document.getElementById('woord').value = '';
+  document.getElementById('definitie').value = '';
 }
 
 
