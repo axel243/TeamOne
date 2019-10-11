@@ -12,10 +12,12 @@ function woordOpslaan(){
   var woord = document.getElementById("woord").value;
   var definitie = document.getElementById("definitie").value;
   var woordDefinitie = new WoordMetDefinitie(woord, definitie);
-  var woordJSON = JSON.stringify(woordDefinitie);
   array.push(woordDefinitie);
-  console.log(array);
-  localStorage.setItem("Key",array);
+  //  console.log(array);
+  localStorage.setItem("Key",JSON.stringify(array));
+  console.log(localStorage.getItem("Key"));
 }
+
+
 
 
