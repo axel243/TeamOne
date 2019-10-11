@@ -1,4 +1,6 @@
-﻿// getting the data
+﻿
+
+// getting the data
 
 //console.log(JSON.parse(localStorage.getItem("Key")));
 console.log(localStorage.getItem("Key"));
@@ -10,26 +12,23 @@ colomnum = 2;
 woordcolom = 50;
 defcolom = 200;
 
-var array = [
-    {
-        woord: "test",
-        definitie: "test"
-    },
-    {
-        woord: "test2",
-        definitie: "test2",
-    }
-
-]
+var array = JSON.parse(localStorage.getItem("Key"));
 
 function generate_table() {
 
     var table = '<table>';
-    for (var i = 0; i < this.y; i++);
-    table_body += '<tr>';
-    for (var j = 0; j < this.x; j++);
+    for (var x = 0; x < array.length; x++) {
+        table += '<tr><td>' + array[x].woord + '</td><td>' + array[x].definitie + '</td></tr>';
         
+    }
+    table += '</table>';
+    console.log(table);
+
+    $('#table').html(table);
 }
+
+generate_table();
+
 
 
 // create a table
