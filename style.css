@@ -3,6 +3,7 @@ body {
     background-image: url(http://www.seekgif.com/uploads/books-powerpoint-background-3.jpeg);
     background-size: cover;
     background-position: top;
+    margin: 0;
 }
 
 
@@ -67,3 +68,24 @@ border-radius: 50%;
 #woorddefsave {
     
 }
+
+li{
+    list-style-type: none;
+    display: inline;
+    margin: 0 2vw;
+}
+
+a{
+    text-decoration: none;
+  }
+
+  nav{
+    width: 100vw;
+    /* background-color: #D6EFFF; */
+  }
+
+  ul{
+      margin: 0;
+      padding: 0;
+      text-align: center;
+  }
