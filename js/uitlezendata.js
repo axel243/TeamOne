@@ -27,5 +27,9 @@ function generate_table() {
 
 $(Document).ready(function () {
     generate_table();
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 66b47f0b49cfddaf1a8243050c34498699ac9231
 });
