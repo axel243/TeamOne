@@ -2,12 +2,12 @@
 body {
     background-image: url(http://www.seekgif.com/uploads/books-powerpoint-background-3.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 
 #container {
-
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #instructies {
@@ -22,30 +22,21 @@ body {
 }
 
 #woordveld {
-
+    padding-bottom: 30px;
 }
-
 #woord {
-
+    padding-top: 10px;
 }
 
 #definitieveld {
-
+    padding-bottom: 30px;
 }
 
 #definitie {
-
+    height: 100px;
+    width: 200px;
 }
 
 #woorddefsave {
-
-}
-
-p {
-    font-family: fantasy, san-serif;
-
-}
-
-h1 {
-
+    
 }
