@@ -1,0 +1,51 @@
+﻿
+body {
+    background-image: url(http://www.seekgif.com/uploads/books-powerpoint-background-3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+#container {
+
+}
+
+#instructies {
+        padding: 50px;
+        text-align: center;
+}
+
+#spel {
+  
+    position: relative;
+    text-align: center;
+}
+
+#woordveld {
+
+}
+
+#woord {
+
+}
+
+#definitieveld {
+
+}
+
+#definitie {
+
+}
+
+#woorddefsave {
+
+}
+
+p {
+    font-family: fantasy, san-serif;
+
+}
+
+h1 {
+
+}
