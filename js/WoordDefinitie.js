@@ -1,4 +1,4 @@
-var array = [];
+var array;
 
 
 class WoordMetDefinitie {
@@ -21,6 +21,20 @@ function woordOpslaan(){
   document.getElementById('woordToegevoegdAlert').value = 'Het woord is succesvol toegevoegd!';
 }
 
+var key = localStorage.getItem("Key")
 
+function checkarray() {
+  if ( key ) {
+    console.log("yes");
+    console.log(key);
+    console.log(JSON.parse(key));
+    array = JSON.parse(key);
+  }
+  else {
+    array = [];
+    console.log("no");
+  }
+}
 
+checkarray()
 
