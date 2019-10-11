@@ -3,7 +3,7 @@
 <head>
 <title>Woordenboek</title>
 
-
+<link rel="stylesheet" type="text/css" href="style.css" />
 
 </head>
 
@@ -13,15 +13,16 @@
 
 <div id="container">
     
-    <div id="instructies">Vul het woord en de definitie in.</div>
-<div id="spel">
+    <div id="instructies"><h1>Het Woordenboekspel</h1><br />
+        <p>Hallo: Vul het woord en de definitie in.<p></div>
+    <div id="spel">
 
 
-    <div id="woordveld">Woord: <input id="woord"type="text" /></div>
-        <div id="definitieveld">Definitie: <input id="definitie"type="text" /></div>
-    <button onclick="woordOpslaan()">Opslaan</button>
+    <div id="woordveld">Woord: <br /><input id="woord"type="text" /></div>
+        <div id="definitieveld">Definitie: <br /><input id="definitie"type="text" /></div>
+    <button id="woorddefsave" onclick="woordOpslaan()">Opslaan</button>
 
-</div>
+    </div>
 </div>
 
 </body>
