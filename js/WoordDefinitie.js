@@ -18,6 +18,7 @@ function woordOpslaan(){
   console.log(localStorage.getItem("Key"));
   document.getElementById('woord').value = '';
   document.getElementById('definitie').value = '';
+  document.getElementById('woordToegevoegdAlert').value = 'Het woord is succesvol toegevoegd!';
 }
 
 
