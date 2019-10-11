@@ -9,7 +9,11 @@ class WoordMetDefinitie {
 }
 
 function woordOpslaan(){
-  var woord = document.getElementById("woord").value;
+  
+  if (document.getElementById('woord').value = '' || document.getElementById('definitie').value = '' ) {
+    document.getElementById('woordToegevoegdAlert').innerHTML = 'Het veld mag niet leeg zijn!';
+  } else {
+    var woord = document.getElementById("woord").value;
   var definitie = document.getElementById("definitie").value;
   var woordDefinitie = new WoordMetDefinitie(woord, definitie);
   array.push(woordDefinitie);
@@ -18,7 +22,9 @@ function woordOpslaan(){
   console.log(localStorage.getItem("Key"));
   document.getElementById('woord').value = '';
   document.getElementById('definitie').value = '';
-  document.getElementById('woordToegevoegdAlert').value = 'Het woord is succesvol toegevoegd!';
+    document.getElementById('woordToegevoegdAlert').innerHTML = 'Het woord is succesvol toegevoegd!';
+  }
+ 
 }
 
 
