@@ -10,10 +10,16 @@ class WoordMetDefinitie {
 
 function woordOpslaan(){
   
-  if (document.getElementById('woord').value = '' || document.getElementById('definitie').value = '' ) {
-    document.getElementById('woordToegevoegdAlert').innerHTML = 'Het veld mag niet leeg zijn!';
-  } else {
-    var woord = document.getElementById("woord").value;
+  if (document.getElementById('woord').value == "") {
+    var woordAlert = document.getElementById('woordToegevoegdAlert')
+    woordAlert.innerHTML = 'Het woord veld mag niet leeg zijn!';
+    woordAlert.style.color = '#eb4034';
+  }else if (document.getElementById('definitie').value == "") {
+    var definitieAlert = document.getElementById('woordToegevoegdAlert')
+    definitieAlert.innerHTML = 'Het definitie veld mag niet leeg zijn!';
+    definitieAlert.style.color = '#eb4034';
+  }else{
+  var woord = document.getElementById("woord").value;
   var definitie = document.getElementById("definitie").value;
   var woordDefinitie = new WoordMetDefinitie(woord, definitie);
   array.push(woordDefinitie);
@@ -22,8 +28,10 @@ function woordOpslaan(){
   console.log(localStorage.getItem("Key"));
   document.getElementById('woord').value = '';
   document.getElementById('definitie').value = '';
-    document.getElementById('woordToegevoegdAlert').innerHTML = 'Het woord is succesvol toegevoegd!';
-  }
+  var succes = document.getElementById('woordToegevoegdAlert');
+  succes.innerHTML = 'Het woord is succesvol toegevoegd!';
+  succes.style.color = '#23ba30';
+}
  
 }
 
